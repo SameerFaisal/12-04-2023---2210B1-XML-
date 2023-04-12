@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE friendList [
+    <!ELEMENT friendList (friend,friend,bestFriend)>
+    <!ELEMENT friend (name,age,job)>
+    <!ELEMENT bestFriend (name,age,job)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT age (#PCDATA)>
+    <!ELEMENT job (#PCDATA)>
+    <!ENTITY Company "Bashir Mills">
+]>
+
+
+<friendList>
+<friend>
+<name>Sadiq</name>
+<age>&quot;23&quot;</age>
+<job>&Company;</job>
+</friend>
+<friend>
+<name>Hammad</name>
+<age>20</age>
+<job>&Company;</job>
+</friend>
+<bestFriend>
+<name>Ali</name>
+<age>24</age>
+<job>&Company;</job>
+</bestFriend>
+</friendList>
